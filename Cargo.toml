@@ -1,0 +1,22 @@
+[package]
+name = "rec"
+version = "0.1.0"
+edition = "2024"
+authors = ["Yesterday17 <mmf@mmf.moe>"]
+repository = "https://github.com/Yesterday17/iori"
+license = "Apache-2.0"
+
+[dependencies]
+iori = { git = "https://github.com/iori-rs/iori", features = ["opendal-s3"] }
+tokio = { version = "1.40.0", features = ["full"] }
+anyhow = "1.0"
+
+clap = { version = "4.5.30", features = ["derive"] }
+
+tracing-subscriber = { version = "0.3.19", features = ["env-filter"] }
+log = "0.4.21"
+uuid = "1.16.0"
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.8.22"
+chrono = "0.4.41"
+chrono-tz = "0.10.3"
